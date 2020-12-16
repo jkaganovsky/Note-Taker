@@ -2,7 +2,8 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 
-const PORT = process.env.PORT || 3001;
+const PORT = 3000;
+// const PORT = process.env.PORT || 3001;
 
 const app = express();
 
@@ -11,17 +12,28 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Routes
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../Develop/public/index.html"));
-});
-
 app.get("/notes", function(req, res) {
     res.sendFile(path.join(__dirname, "../Develop/public/notes.html"));
 });
 
+app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "../Develop/public/index.html"));
+});
+
+app.get("/api/notes", function(req, res) {
+    return res.json(notes);
+});
+
+const notes = [
+    {
+        title: "Test Title",
+        text: "Test text"
+    }
+]
+
 // Posting new Note
-app.post("/notes", function(req,res) {
-    var newNote = req.body;
+app.post("/api/notes", function(req,res) {
+    const newNote = req.body;
 
     console.log(newNote);
 
