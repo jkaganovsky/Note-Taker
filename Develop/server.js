@@ -6,8 +6,8 @@ const notesList = [];
 const OUTPUT_DIR = path.resolve(__dirname, "db");
 const outputPath = path.join(OUTPUT_DIR, "db.json");
 
-const PORT = 3000;
-// const PORT = process.env.PORT || 3001;
+// const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -28,17 +28,23 @@ app.get("/notes", function(req, res) {
     res.sendFile(path.join(__dirname, "../Develop/public/notes.html"));
 });
 
-app.get("/api/notes/:note", function(req, res) {
-    const selectNote = req.params.note;
+app.get("/api/notes/:id", function(req, res) {
+    const selectNote = req.params.id;
     console.log(selectNote);
 
-    for (let i = 0; i < notesList.length; i++) {
-      if (selectNote === notesList[i].routeName) {
-        return res.json(notesList[i]);
-      }
-    }
+    return res.send(req.params.id);
 
-    return res.send("No notes found");
+    // const fileData = JSON.parse(fs.readFileSync(__dirname + "/db/db.json"));
+
+    // console.log("Notes:", fileData);
+
+    // for (let i = 0; i < fileData.length; i++) {
+    //   if (selectNote === fileData[i].routeName) {
+    //     return res.send(fileData[i]);
+    //   }
+    // }
+
+    // return res.send("No notes found");
   });
 
 app.get("*", function(req, res) {
@@ -56,10 +62,29 @@ app.post("/api/notes", function(req,res) {
     const fileData = JSON.parse(fs.readFileSync(__dirname + "/db/db.json"));
     console.log("Before push:", fileData);
 
+    const lastIndex = (fileData.length - 1);
+
+    newNote.id = fileData[lastIndex].id + 1;
+
     fileData.push(newNote);
     console.log("After push:", fileData);
 
     fs.writeFileSync(__dirname + "/db/db.json", JSON.stringify(fileData));
+});
+
+// Deleting Notes
+app.delete("/api/notes/:id", function(req, res) {
+    const deleteNote = req.params.id;
+
+    console.log(deleteNote);
+
+    for (let i = 0; i < notesList.length; i++) {
+        if (deleteNote === notesList[i].routeName) {
+            return res.send(notesList[i]);
+        }
+    }
+
+    return res.send(false);
 });
 
 // Start server
