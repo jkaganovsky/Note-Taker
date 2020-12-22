@@ -64,7 +64,6 @@ app.delete("/api/notes/:id", function(req, res) {
     const fileData = JSON.parse(fs.readFileSync(__dirname + "/db/db.json"));
     console.log("Read data:", fileData);
 
-    //
     for (let i = 0; i < fileData.length; i++) {
         console.log("For loop:", fileData[i]);
         if (deleteNote === fileData[i].id) {
