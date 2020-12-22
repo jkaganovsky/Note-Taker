@@ -1,21 +1,27 @@
 {
-  "name": "note-taker",
+  "name": "Note-Taker",
   "version": "1.0.0",
-  "description": "Helps you create and save your notes",
+  "description": "Helps you create, view and save your notes",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "watch": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkaganovsky/Note-Taker.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "promisify": "^0.0.3",
-    "util": "^0.12.3"
+  "bugs": {
+    "url": "https://github.com/jkaganovsky/Note-Taker/issues"
   },
+  "homepage": "https://github.com/jkaganovsky/Note-Taker#readme",
   "devDependencies": {
     "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
