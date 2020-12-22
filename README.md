@@ -6,12 +6,12 @@
 Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
 ## Links
-[Github Repository](https://github.com/jkaganovsky/Note-Taker)
-[Heroku](https://notes-logging.herokuapp.com/)
+* [Github Repository](https://github.com/jkaganovsky/Note-Taker)
+* [Heroku](https://notes-logging.herokuapp.com/)
 
 
 ## Installation & Usage
-* GITHUB
+GITHUB
 1. Clone this repository from my github link.
 1. Run your local computer's terminal and git clone this repository to save to your local computer.
 1. Install Node.js to your local computer if you don't have it (https://nodejs.org/en/).
@@ -19,23 +19,24 @@ Create an application that can be used to write, save, and delete notes. This ap
 1. Run `node server.js` or `npm run watch` on your terminal.
 1. Open your browser with the filepath localhost:3000 to start the application.
 
-* HEROKU
+
+HEROKU
 1. Open the heroku link and start using the application
 
 ## Content
 * DEMO
 
-    ![HTML gif](./assets/images/note-taker.gif)
+    ![HTML gif](./Develop/public/assets/images/note-taker.gif)
 
 * SCREENSHOTS
 
     - server.js
 
-    ![routes](./assets/images/routes-app.get.png)
+    ![routes](./Develop/public/assets/images/routes-app.get.png)
 
-    ![posts](./assets/images/posts-app.post.png)
+    ![posts](./Develop/public/assets/images/posts-app.post.png)
 
-    ![delete](./assets/images/delete-app.delete.png)
+    ![delete](./Develop/public/assets/images/delete-app.delete.png)
 
 ## Credits
 1. My Trilogy Education Tutor, Jacob Carver - https://www.linkedin.com/in/jacob-carver-software-developer125b81191/
