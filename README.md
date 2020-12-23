@@ -12,7 +12,7 @@ Create an application that can be used to write, save, and delete notes. This ap
 
 ## Installation & Usage
 GITHUB
-1. Clone this repository from my github link.
+1. Clone this repository from my [Github Repository](https://github.com/jkaganovsky/Note-Taker) link.
 1. Run your local computer's terminal and git clone this repository to save to your local computer.
 1. Install Node.js to your local computer if you don't have it (https://nodejs.org/en/).
 1. Run `npm i inquirer` from your computer's terminal to install the **Inquirer** package to the cloned repository's folder.
@@ -21,22 +21,22 @@ GITHUB
 
 
 HEROKU
-1. Open the heroku link and start using the application
+1. Open the [Heroku](https://notes-logging.herokuapp.com/) link and start using the application
 
 ## Content
 * DEMO
 
-    ![HTML gif](./Develop/public/assets/images/note-taker.gif)
+    ![HTML gif](./public/assets/images/note-taker.gif)
 
 * SCREENSHOTS
 
     - server.js
 
-    ![routes](./Develop/public/assets/images/routes-app.get.png)
+    ![routes](./public/assets/images/routes-app.get.png)
 
-    ![posts](./Develop/public/assets/images/posts-app.post.png)
+    ![posts](./public/assets/images/posts-app.post.png)
 
-    ![delete](./Develop/public/assets/images/delete-app.delete.png)
+    ![delete](./public/assets/images/delete-app.delete.png)
 
 ## Credits
 1. My Trilogy Education Tutor, Jacob Carver - https://www.linkedin.com/in/jacob-carver-software-developer125b81191/
