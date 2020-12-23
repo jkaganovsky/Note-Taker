@@ -33,17 +33,17 @@ HEROKU
 ## Content
 DEMO
 
-    ![HTML gif](./public/assets/images/note-taker.gif)
+![HTML gif](./public/assets/images/note-taker.gif)
 
 SCREENSHOTS
 
-    - server.js
+- server.js
 
-    ![routes](./public/assets/images/routes-app.get.png)
+![routes](./public/assets/images/routes-app.get.png)
 
-    ![posts](./public/assets/images/posts-app.post.png)
+![posts](./public/assets/images/posts-app.post.png)
 
-    ![delete](./public/assets/images/delete-app.delete.png)
+![delete](./public/assets/images/delete-app.delete.png)
 
 ## Credits
 1. My Trilogy Education Tutor, Jacob Carver - https://www.linkedin.com/in/jacob-carver-software-developer125b81191/
