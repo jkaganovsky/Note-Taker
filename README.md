@@ -11,14 +11,14 @@ Application that can be used to write, save, and delete notes. This application 
 
 
 ## Installation & Usage
-<u>FEATURES</u>
+FEATURES
 1. Allows the user to save a new note.
 1. Allows the user to refresh the page and see their previously saved notes.
 1. Allows the user to delete a selected note.
 1. Allows the user to click on a note to view its contents.
 
 
-<u>GITHUB</u>
+GITHUB
 1. Clone this repository from my [Github Repository](https://github.com/jkaganovsky/Note-Taker) link.
 1. Run your local computer's terminal and git clone this repository to save to your local computer.
 1. Install Node.js to your local computer if you don't have it (https://nodejs.org/en/).
@@ -27,15 +27,15 @@ Application that can be used to write, save, and delete notes. This application 
 1. Open your browser with the filepath localhost:3000 to start the application.
 
 
-<u>HEROKU</u>
+HEROKU
 * Open the [Heroku](https://notes-logging.herokuapp.com/) link and start using the application
 
 ## Content
-<u>DEMO</u>
+DEMO
 
     ![HTML gif](./public/assets/images/note-taker.gif)
 
-<u>SCREENSHOTS</u>
+SCREENSHOTS
 
     - server.js
 
