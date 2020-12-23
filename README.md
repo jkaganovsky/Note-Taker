@@ -3,7 +3,7 @@
 # Note-Taker
 
 ## Description
-Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+Application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
 ## Links
 * [Github Repository](https://github.com/jkaganovsky/Note-Taker)
@@ -11,7 +11,14 @@ Create an application that can be used to write, save, and delete notes. This ap
 
 
 ## Installation & Usage
-GITHUB
+<u>FEATURES</u>
+1. Allows the user to save a new note.
+1. Allows the user to refresh the page and see their previously saved notes.
+1. Allows the user to delete a selected note.
+1. Allows the user to click on a note to view its contents.
+
+
+<u>GITHUB</u>
 1. Clone this repository from my [Github Repository](https://github.com/jkaganovsky/Note-Taker) link.
 1. Run your local computer's terminal and git clone this repository to save to your local computer.
 1. Install Node.js to your local computer if you don't have it (https://nodejs.org/en/).
@@ -20,15 +27,15 @@ GITHUB
 1. Open your browser with the filepath localhost:3000 to start the application.
 
 
-HEROKU
-1. Open the [Heroku](https://notes-logging.herokuapp.com/) link and start using the application
+<u>HEROKU</u>
+* Open the [Heroku](https://notes-logging.herokuapp.com/) link and start using the application
 
 ## Content
-* DEMO
+<u>DEMO</u>
 
     ![HTML gif](./public/assets/images/note-taker.gif)
 
-* SCREENSHOTS
+<u>SCREENSHOTS</u>
 
     - server.js
 
